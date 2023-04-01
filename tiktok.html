@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok Video Downloader</title>
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.16/tailwind.min.css">
+</head>
+<body>
+    <div class="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+        <h1 class="text-4xl font-bold mb-8">TikTok Video Downloader</h1>
+        <div class="flex items-center">
+            <input type="text" id="video-url" class="px-4 py-2 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-600" placeholder="Enter TikTok video URL">
+            <button id="download-btn" class="px-6 py-2 bg-blue-600 text-white rounded-r-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600">Download</button>
+        </div>
+        <p id="error-msg" class="text-red-500 mt-4 hidden"></p>
+        <div id="video-container" class="mt-8 hidden">
+            <video id="video-player" controls></video>
+            <div class="mt-4">
+                <a href="#" id="download-link" download class="px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600">Download Without Watermark</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
